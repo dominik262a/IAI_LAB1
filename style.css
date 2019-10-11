@@ -4,3 +4,14 @@ body {
 li {
     display: inline;
 }
+div {
+    width: 20px;px;
+
+    height:60px;
+
+    border:1px solid;
+
+    resize:both;
+
+    overflow:auto;
+}
