@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
     <meta charset="UTF-8">
-    <title>MECH</title>
+    <title>Laboratorium</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <ul>
-        <ul class="nav">
-            <li class="HOME">
-                <a class="HOME active" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-        </ul>
-    </ul>
-
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 </head>
 <body>
-<div style="width:40px; height:40px;background-color: yellow"></div>
+<nav class="nav">
+    <a class="nav-link active" href="index.html">Home</a>
+    <a class="nav-link active" href="contact.html">Contact</a>
 
-Kibel
+</nav>
+<div>
+    <p align="center">Uzupełnij dane:</p> <br>
+    Podaj imie: <br>
+    <input type="text" name="imie" placeholder="Podaj imie"> <br>
+    Podaj nazwisko: <br>
+    <input type="text" name="nazwisko" placeholder="Podaj nazwisko"> <br>
+    Podaj e-mail: <br>
+    <input type="email" name="mail" placeholder="Podaj e-mail"> <br>
+    Płeć: <br>
+    <input type="checkbox" name="nazwa" placeholder="wartość" > Kobieta
+    <input type="checkbox" name="nazwa" placeholder="wartość" >  Mężczyzna <br>
+    Opis: <br>
+    <textarea rows="4" cols="30">
+    </textarea> <br>
+    Podaj wiek: <br>
+    <input type="number" name="wiek" min="10" max="99" value="20"> <br>
+    Stan cywilny: <br>
+    <select>
+        <option value="wartość1">Kawaler/Panna</option>
+        <option value="wartość2">Zamężny/Żonata</option>
+        <option value="wartość3">Wdowiec/Wdowa</option>
+        <option value="wartość4">Rozwodnik/Rozwódka</option>
+    </select>
+
+</div>
+
 </body>
 </html>
