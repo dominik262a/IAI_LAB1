@@ -24,4 +24,11 @@ div {
 
     padding: 10px;
 }
+center
+{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+
+}
 © 2019 GitHub, Inc.
