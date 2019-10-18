@@ -1,17 +1,27 @@
 body {
-    background-color:white;
+    background-color:mediumaquamarine;
 }
 li {
     display: inline;
 }
-div {
-    width: 20px;px;
+body {
 
-    height:60px;
+}
+div {
+}
+#contact {
+    width:400px;
+
+    height:600px;
 
     border:1px solid;
 
     resize:both;
 
     overflow:auto;
+
+    margin: 10px;
+
+    padding: 10px;
 }
+© 2019 GitHub, Inc.
