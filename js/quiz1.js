@@ -211,16 +211,7 @@ if (preQuestions[index].answers.length === 2) {
     answers[2].style.display = 'block';
     answers[3].style.display = 'block';
 }
-next.addEventListener('click', function () {
-    index++;
-    setQuestion(index);
-    activateAnswers();
-});
-previous.addEventListener('click', function () {
-    index--;
-    setQuestion(index);
-    activateAnswers();
-});
+
 
 function doAction(event) {
    // event.target - Zwraca referencję do elementu, do którego zdarzenie zostało pierwotnie wysłane.
@@ -254,11 +245,33 @@ function disableAnswers() {
         answers[i].addEventListener('click', doAction);
     }
 }
+next.addEventListener('click', function () {
+    index++;
+    if (index >= preQuestions.length) {
+        list.style.display = 'none';
+        results.style.display = 'block';
+        userScorePoint.innerHTML = points;
+    } else {
+        setQuestion(index);
+        activateAnswers();
+    }
+});
+previous.addEventListener('click', function () {
+    index--;
+    if (index >= preQuestions.length) {
+        list.style.display = 'none';
+        results.style.display = 'block';
+        userScorePoint.innerHTML = points;
+    } else {
+        setQuestion(index);
+        activateAnswers();
+    }
+});
 
-
-
-
-
+localStorage.setItem("klucz", "wartość");
+et obj = {};
+localStorage.setItem("klucz", JSON.stringify(obj));
+et obj2 = JSON.parse(localStorage.getItem(“klucz”));
 
 restart.addEventListener('click', function (event) {
     event.preventDefault();
